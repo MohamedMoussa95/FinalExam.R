@@ -1,19 +1,41 @@
-library(tidyverse)
+#Create new script and install needed packages: readr and Rcpp after you have installed Make
 
-#Installed Tidyverse
+#Installed Tidyverse because you need to work with ggplot
+
+#Ran line: library(tidyverse)
+
 HVOR HAR JEG DOWNLOADET DEN OG HVORDAN HAR JEG DOWNLOADET DEN? HVOR ER DEN FRA? HVOR HAR JEG GEMT FILEN OG HVAD HEDDER DEN
-#Import dataset from readr
+Data is from https://ourworldindata.org/grapher/rate-of-violent-deaths-state-societies?tab=table
+#Import downloaded dataset from readr, take option from text (readr) - located at:
 ("~/Desktop/Violence & death/rate-of-violent-deaths-state-societies.csv")
-#Copied the code into the script
 
+#Copy "~/Desktop/Violence & death/rate-of-violent-deaths-state-societies.csv" from "code preview" bottom right corner
 
-#copied code into the script
+#Run the line "~/Desktop/Violence & death/rate-of-violent-deaths-state-societies.csv" in RStudio
 
+#The file appears in the Global Enviroment section located on the right upper corner
 
-#File appears in Environment -> Global Environment
+Go to http://hax.odsbjerg.dk/twitter_scrape.html and copy the code from 4. Visualisation
 
+#Delete the first three lines of code after "dkpoltweets_ttm %>%"
 
-#Copied code from Hax.odsbjerg.dk
+#Change upperline "dkpoltweets_ttm %>%" to "rate_of_death%>%
+
+#Change the x-axis to "Year" 
+
+#Change the y-axis to "Rate of violent deaths (state societies)
+
+#Run the code
+
+Need to fix the titles so they corrrespond to the datasheet
+
+#Go to "labs" section of the script and change x-axis once more fro "Count" to "Year"
+
+#Go to "labs" section of the script and change y-axis from "Unique words" to "Rate of violent deaths (per 100.000)
+
+#Go to "labs" section of the script and change main title from "Count of unique words found in dkpol tweets" to "Rate of violent deaths (state societies)
+
+Final code should look like this 
 rate_of_death %>%
 ggplot(aes(x = Year, y = `Rate of violent deaths (state societies);`)) +
   geom_col() +
@@ -21,3 +43,12 @@ ggplot(aes(x = Year, y = `Rate of violent deaths (state societies);`)) +
   labs(x = "Year",
        y = "Rate of violent deaths (per 100.000)",
        title = "Rate of violent deaths (state societies)")
+
+#Run the code again
+
+Graph succesfully appears correctly in bottom right corner in the "Plots" section
+
+
+
+
+
