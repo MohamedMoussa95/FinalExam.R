@@ -1,7 +1,7 @@
 library(tidyverse)
 
 #Installed Tidyverse
-HVOR HAR JEG DOWNLOADET DEN OG HVORDAN HAR JEG DOWNLOADET DEN? HVOR ER DEN FRA?
+HVOR HAR JEG DOWNLOADET DEN OG HVORDAN HAR JEG DOWNLOADET DEN? HVOR ER DEN FRA? HVOR HAR JEG GEMT FILEN OG HVAD HEDDER DEN
 #Import dataset from readr
 ("~/Desktop/Violence & death/rate-of-violent-deaths-state-societies.csv")
 #Copied the code into the script
