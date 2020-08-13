@@ -6,7 +6,7 @@
 
 Data is from https://ourworldindata.org/grapher/rate-of-violent-deaths-state-societies?tab=table
 
-#Import downloaded dataset from readr, take option from text (readr) - located at:
+#Import downloaded dataset from readr, take option from text (readr) - located at (attention: you might have it saved elsewhere):
 ("~/Desktop/Violence & death/rate-of-violent-deaths-state-societies.csv")
 
 #Copy "~/Desktop/Violence & death/rate-of-violent-deaths-state-societies.csv" from "code preview" bottom right corner
@@ -17,13 +17,15 @@ Data is from https://ourworldindata.org/grapher/rate-of-violent-deaths-state-soc
 
 Go to http://hax.odsbjerg.dk/twitter_scrape.html and copy the code from 4. Visualisation
 
+#Copy paste the code into RStudio
+
 #Delete the first three lines of code after "dkpoltweets_ttm %>%"
 
 #Change upperline "dkpoltweets_ttm %>%" to "rate_of_death%>%
 
 #Change the x-axis to "Year" 
 
-#Change the y-axis to "Rate of violent deaths (state societies)
+#Change the y-axis to "Rate of violent deaths (per 100.000)
 
 #Run the code
 
