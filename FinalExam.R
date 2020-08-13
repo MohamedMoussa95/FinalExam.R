@@ -1,21 +1,21 @@
-#Create new script and install needed packages: readr and Rcpp after you have installed Make
+#Create new script and install needed packages: 
 
-#Install Tidyverse because you need to work with ggplot
+#Load needed libraries:
 
-#Run line: library(tidyverse)
+library(tidyverse)
 
-Data is from https://ourworldindata.org/grapher/rate-of-violent-deaths-state-societies?tab=table
 
-#Import downloaded dataset from readr, take option from text (readr) - located at (attention: you might have it saved elsewhere):
-("~/Desktop/Violence & death/rate-of-violent-deaths-state-societies.csv")
+#Import downloaded dataset from readr, take option from text (readr)
 
-#Copy "~/Desktop/Violence & death/rate-of-violent-deaths-state-societies.csv" from "code preview" bottom right corner
+#Data is from "https://ourworldindata.org/grapher/rate-of-violent-deaths-state-societies?tab=table" and has been downloaded and added to this repository
 
-#Run the line "~/Desktop/Violence & death/rate-of-violent-deaths-state-societies.csv" in RStudio
+#Since the dataset is uploaded to this repository we can read it in using the URL
+
+rate_of_death <- read_csv("https://raw.githubusercontent.com/MohamedMoussa95/FinalExam.R/master/rate-of-violent-deaths-state-societies.csv")
 
 #The file appears in the Global Enviroment section located on the right upper corner
 
-Go to http://hax.odsbjerg.dk/twitter_scrape.html and copy the code from 4. Visualisation
+#Go to http://hax.odsbjerg.dk/twitter_scrape.html and copy the code from 4. Visualisation
 
 #Copy paste the code into RStudio
 
@@ -27,9 +27,7 @@ Go to http://hax.odsbjerg.dk/twitter_scrape.html and copy the code from 4. Visua
 
 #Change the y-axis to "Rate of violent deaths (per 100.000)
 
-#Run the code
-
-Need to fix the titles so they corrrespond to the datasheet
+#Need to fix the titles so they corrrespond to the datasheet
 
 #Go to "labs" section of the script and change x-axis once more fro "Count" to "Year"
 
@@ -37,20 +35,18 @@ Need to fix the titles so they corrrespond to the datasheet
 
 #Go to "labs" section of the script and change main title from "Count of unique words found in dkpol tweets" to "Rate of violent deaths (state societies)
 
-Final code should look like this 
+#Final code look like this:
+
 rate_of_death %>%
-ggplot(aes(x = Year, y = `Rate of violent deaths (state societies);`)) +
+  ggplot(aes(x = Year, y = `Rate of violent deaths (state societies);`)) +
   geom_col() +
   xlab(NULL) +
   labs(x = "Year",
        y = "Rate of violent deaths (per 100.000)",
        title = "Rate of violent deaths (state societies)")
 
-#Run the code again
-
-Graph succesfully appears correctly in bottom right corner in the "Plots" section
-
-
+#Save the plot for dissemination:
+ggsave("rate_of_deaths_statesocieties.png")
 
 
 
