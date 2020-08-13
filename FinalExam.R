@@ -1,11 +1,11 @@
 #Create new script and install needed packages: readr and Rcpp after you have installed Make
 
-#Installed Tidyverse because you need to work with ggplot
+#Install Tidyverse because you need to work with ggplot
 
-#Ran line: library(tidyverse)
+#Run line: library(tidyverse)
 
-HVOR HAR JEG DOWNLOADET DEN OG HVORDAN HAR JEG DOWNLOADET DEN? HVOR ER DEN FRA? HVOR HAR JEG GEMT FILEN OG HVAD HEDDER DEN
 Data is from https://ourworldindata.org/grapher/rate-of-violent-deaths-state-societies?tab=table
+
 #Import downloaded dataset from readr, take option from text (readr) - located at:
 ("~/Desktop/Violence & death/rate-of-violent-deaths-state-societies.csv")
 
