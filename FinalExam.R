@@ -33,7 +33,7 @@ rate_of_death <- read_csv("https://raw.githubusercontent.com/MohamedMoussa95/Fin
 
 #Go to "labs" section of the script and change y-axis from "Unique words" to "Rate of violent deaths (per 100.000)
 
-#Go to "labs" section of the script and change main title from "Count of unique words found in dkpol tweets" to "Rate of violent deaths (state societies)
+#Go to "labs" section of the script and change main title from "Count of unique words found in dkpol tweets" to "Rate of violent deaths (state societies)"
 
 #Final code look like this:
 
