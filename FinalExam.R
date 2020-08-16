@@ -25,7 +25,7 @@ rate_of_death <- read_csv("https://raw.githubusercontent.com/MohamedMoussa95/Fin
 
 #Change the x-axis to "Year" 
 
-#Change the y-axis to "Rate of violent deaths (per 100.000)
+#Change the y-axis to "Rate of violent deaths (per 100.000)"
 
 #Need to fix the titles so they corrrespond to the datasheet
 
